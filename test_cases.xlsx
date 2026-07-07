@@ -1,0 +1,67 @@
+| TC ID  | Module | Test Scenario                       | Preconditions         | Test Steps                                    | Expected Result                    | Priority | Status |
+| ------ | ------ | ----------------------------------- | --------------------- | --------------------------------------------- | ---------------------------------- | -------- | ------ |
+| TC_001 | Login  | Verify login with valid credentials | User is on login page | Enter valid username/password → Click Login   | User should navigate to Dashboard  | High     | Pass   |
+| TC_002 | Login  | Verify login with invalid password  | User is on login page | Enter valid username + invalid password       | Error message should display       | High     | Pass   |
+| TC_003 | Login  | Verify login with invalid username  | User is on login page | Enter invalid username/password               | Error message should display       | High     | Pass   |
+| TC_004 | Login  | Verify login with blank username    | User is on login page | Leave username empty → Enter password → Login | Required validation should display | Medium   | Pass   |
+| TC_005 | Login  | Verify login with blank password    | User is on login page | Enter username → Leave password empty         | Required validation should display | Medium   | Pass   |
+| TC_006 | Login  | Verify password masking             | User is on login page | Enter password                                | Password should be hidden          | Low      | Pass   |
+| TC_007 | Login  | Verify login button functionality   | User is on login page | Click Login button                            | Login request should process       | High     | Pass   |
+DASHBOARD MODULE
+| TC ID  | Scenario                            | Expected Result                       | Priority |
+| ------ | ----------------------------------- | ------------------------------------- | -------- |
+| TC_008 | Verify dashboard loads after login  | Dashboard should display successfully | High     |
+| TC_009 | Verify dashboard widgets visibility | All widgets should load correctly     | Medium   |
+| TC_010 | Verify user profile menu            | Profile options should display        | Medium   |
+| TC_011 | Verify navigation menu items        | All menu options should be accessible | High     |
+PIM (Employee Management) 
+| TC ID  | Scenario                          | Expected Result                             | Priority |
+| ------ | --------------------------------- | ------------------------------------------- | -------- |
+| TC_012 | Open Employee List page           | Employee list should display                | High     |
+| TC_013 | Search employee by name           | Matching employee should display            | High     |
+| TC_014 | Search employee with invalid name | No records message should display           | Medium   |
+| TC_015 | Add new employee with valid data  | Employee should be created                  | High     |
+| TC_016 | Add employee without first name   | Validation message should display           | Medium   |
+| TC_017 | Add employee without last name    | Validation message should display           | Medium   |
+| TC_018 | Edit employee details             | Updated details should save                 | High     |
+| TC_019 | Delete employee record            | Employee should be removed                  | High     |
+| TC_020 | Verify employee profile details   | Correct employee information should display | Medium   |
+Leave Module
+| TC ID  | Scenario                  | Expected Result                   | Priority |
+| ------ | ------------------------- | --------------------------------- | -------- |
+| TC_021 | Open Leave page           | Leave dashboard should display    | Medium   |
+| TC_022 | Apply leave request       | Leave request should submit       | High     |
+| TC_023 | Apply leave without dates | Validation message should display | Medium   |
+| TC_024 | Cancel leave request      | Leave request should cancel       | Medium   |
+Time Module
+| TC ID  | Scenario            | Expected Result            | Priority |
+| ------ | ------------------- | -------------------------- | -------- |
+| TC_025 | Open Timesheet page | Timesheet should load      | Medium   |
+| TC_026 | Add timesheet entry | Entry should save          | High     |
+| TC_027 | Submit timesheet    | Submission should complete | High     |
+Search & UI Validation
+| TC ID  | Scenario                        | Expected Result               | Priority |
+| ------ | ------------------------------- | ----------------------------- | -------- |
+| TC_028 | Verify browser refresh behavior | Data should remain consistent | Medium   |
+| TC_029 | Verify page title               | Correct title should display  | Low      |
+| TC_030 | Verify broken links             | No broken links should exist  | Medium   |
+| TC_031 | Verify spelling errors          | No UI spelling mistakes       | Low      |
+| TC_032 | Verify alignment of UI elements | UI should be properly aligned | Low      |
+Security / Negative Testing
+| TC ID  | Scenario                             | Expected Result                      | Priority |
+| ------ | ------------------------------------ | ------------------------------------ | -------- |
+| TC_033 | Enter special characters in fields   | System should handle input properly  | Medium   |
+| TC_034 | Enter very long text                 | Field should restrict invalid length | Medium   |
+| TC_035 | Use browser back button after logout | User should not access dashboard     | High     |
+| TC_036 | Session timeout validation           | User should be logged out            | High     |
+Logout
+| TC ID  | Scenario                 | Expected Result                | Priority |
+| ------ | ------------------------ | ------------------------------ | -------- |
+| TC_037 | Logout from application  | User redirected to login page  | High     |
+| TC_038 | Login again after logout | User should login successfully | Medium   |
+Exploratory Scenarios
+| TC ID  | Scenario                   | Expected Result             | Priority |
+| ------ | -------------------------- | --------------------------- | -------- |
+| TC_039 | Test application on Chrome | Application works correctly | Medium   |
+| TC_040 | Test application on Edge   | Application works correctly | Medium   |
+
